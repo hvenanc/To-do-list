@@ -5,7 +5,7 @@ class TaskRequest(BaseModel):
     nome: str
     descricao: str
     prioridade: int
-    status: bool = True
+    status: bool
 
 
 class TaskResponse(BaseModel):

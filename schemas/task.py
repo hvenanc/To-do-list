@@ -1,14 +1,14 @@
 from pydantic import BaseModel
 
 
-class ToDoListRequest(BaseModel):
+class TaskRequest(BaseModel):
     nome: str
     descricao: str
     prioridade: int
     status: bool = True
 
 
-class ToDoListResponse(BaseModel):
+class TaskResponse(BaseModel):
     id: str
     nome: str
     descricao: str

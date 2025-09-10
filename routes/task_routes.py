@@ -9,7 +9,7 @@ class TaskController:
 
     def __init__(self):
         self.router = APIRouter(
-            prefix="tasks",
+            prefix="/tasks",
             tags=["TO-DO-LIST"]
         )
         self.service = TaskService()
